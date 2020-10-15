@@ -1,0 +1,23 @@
+import random
+a=random.randint(0,9)
+b=random.randint(0,9)
+c=random.randint(0,9)
+d=random.randint(0,9)
+n=str[a]+str[b]+str[c]+str[d]
+l=list(n)
+for i in range (5):
+  u=input("Enter your guess(min 4 digits):")
+  m=list(u)
+  e=f=0
+  for m[i] in l:
+    e=e+1
+    if m[i]==l[i]:
+     f=f+1
+  if e==4:
+    print("CONGRATS......Your guess is correct")
+    break
+  elif e!=0:
+    print("Number of digits correct:",e)
+    print("Number of correct position:",f)
+  else:
+    print("better luck next time")
